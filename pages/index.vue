@@ -31,17 +31,14 @@
 
       <v-list>
         <v-list-item
-            v-for="[icon, text] in links"
-            :key="icon"
+            class="link"
+            v-for="[text, link] in links"
+            :key="link"
             link
         >
-          <v-list-item-icon>
-            <v-icon>{{ icon }}</v-icon>
-          </v-list-item-icon>
-
-          <v-list-item-content>
-            <v-list-item-title>{{ text }}</v-list-item-title>
-          </v-list-item-content>
+          <NuxtLink
+              :to="link">{{text}}
+          </NuxtLink>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -100,12 +97,18 @@ export default {
     cards: ['Today', 'Yesterday'],
     drawer: null,
     links: [
-      ['mdi-contacts-arrow-down', 'Contacts'],
-      ['mdi-send', 'Conversations'],
-      ['mdi-delete', 'Marketing'],
-      ['mdi-alert-octagon', 'Sales'],
-      ['mdi-alert-octagon', 'Service'],
+      [ 'Contacts','contacts'],
+      [ 'Conversations','conversations'],
+      [ 'Marketing','marketing'],
+      [ 'Sales','sales'],
+      [ 'Service','service'],
     ],
   }),
 }
 </script>
+<style scoped>
+a{
+  text-decoration: none!important;
+  color: black!important;
+}
+</style>
