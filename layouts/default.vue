@@ -1,8 +1,8 @@
 <template>
   <v-app id="inspire">
     <v-app-bar
-        class="app-bar"
         app
+        class="app-bar"
         clipped-left
         color="#00E5FF"
         dense
@@ -14,17 +14,17 @@
         </NuxtLink>
       </v-toolbar-title>
       <v-row
-          class="mx-4"
           align="center"
+          class="mx-4"
           style="max-width: 650px"
       >
         <v-text-field
             :append-icon-cb="() => {}"
-            placeholder="Search..."
-            single-line
             append-icon="mdi-magnify"
             color="white"
             hide-details
+            placeholder="Search..."
+            single-line
         ></v-text-field>
       </v-row>
     </v-app-bar>
@@ -38,13 +38,13 @@
       >
         <VAvatar
             class="my-4"
-            style="cursor: pointer;"
             color="primary"
+            style="cursor: pointer;"
             variant="tonal"
         >
-          <img :src="avatarImg" />
+          <img :src="avatarImg"/>
         </VAvatar>
-        <div >john@vuetifyjs.com</div>
+        <div>john@vuetifyjs.com</div>
       </v-sheet>
 
       <v-divider></v-divider>
@@ -52,9 +52,9 @@
       <v-list>
 
         <span
-            class="link"
             v-for="[text, link] in links"
             :key="link"
+            class="link"
 
         >
           <NuxtLink
@@ -79,7 +79,6 @@
 </template>
 
 <script>
-import avatarImg from '~/assets/img/avatar.png'
 
 export default {
   name: "default.vue",
@@ -117,7 +116,8 @@ a {
   /*padding: 4px 16px;*/
   /*position: relative;*/
 }
-.app-bar{
+
+.app-bar {
   box-shadow: none !important;
   z-index: 1;
 }

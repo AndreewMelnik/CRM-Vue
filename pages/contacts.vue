@@ -1,7 +1,7 @@
 <template>
   <VCol cols="12">
     <VCard title="Dense">
-      <Tables />
+      <Tables/>
     </VCard>
   </VCol>
 </template>
