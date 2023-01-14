@@ -91,6 +91,7 @@ export default {
       ['Marketing', 'marketing'],
       ['Sales', 'sales'],
       ['Service', 'service'],
+      ['Login', 'login'],
     ],
   }),
 }
