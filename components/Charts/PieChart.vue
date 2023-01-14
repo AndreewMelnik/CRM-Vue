@@ -1,9 +1,9 @@
 <template>
-  <Doughnut :data="data" :options="options" />
+  <Doughnut :data="data" :options="options"/>
 </template>
 
 <script lang="ts">
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
+import { ArcElement, Chart as ChartJS, Legend, Tooltip } from 'chart.js'
 import { Doughnut } from 'vue-chartjs'
 import * as chartConfig from '../../chartConfig.js'
 
