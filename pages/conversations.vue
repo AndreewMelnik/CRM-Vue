@@ -1,5 +1,7 @@
 <template>
-
+  <VCard title="Dense">
+    <Tables/>
+  </VCard>
 </template>
 
 <script>
